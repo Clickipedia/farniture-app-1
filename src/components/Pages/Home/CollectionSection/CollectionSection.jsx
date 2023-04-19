@@ -22,7 +22,7 @@ const CollectionSection = () => {
                     <p className='text-xl w-[80%] text-[#979694]'>
                         We strive to bring you quality products with a minimal approach of design.
                     </p>
-                    <button className='text-lg px-6 py-3 bg-[#4c5653] text-[#dbdad8]'>
+                    <button className='text-lg px-6 py-3 bg-[#4c5653] text-[#dbdad8] duration-100 hover:outline hover:bg-transparent hover:border-[#4c5653] hover:text-[#4c5653]'>
                         VIEW FULL COLLECTION
                     </button>
                 </div>
@@ -42,17 +42,17 @@ const CollectionSection = () => {
                     <p className='text-xl w-[80%] text-[#979694]'>
                         Our works are 100% made by our craftsmen using sustainable resources with quality.
                     </p>
-                    <button className='text-lg px-6 py-3 border-[4px] border-[#4c5653] text-[#4c5653]'>
+                    <button className='text-lg font-semibold px-6 py-3 border-[4px] border-[#4c5653] text-[#4c5653] duration-100 hover:bg-[#4c5653] hover:text-[#dbdad8]'>
                         VIEW FULL COLLECTION
                     </button>
                 </div>
                 <div className='flex mt-[90px] items-center'>
                     <p className='text-xl font-semibold text-[#4c5653]' >Available in:</p>
                     <div className='space-x-5 ms-5'>
-                        <span className='w-5 h-5 px-4 py-2 bg-[#4b5552] rounded-[50%]' ></span>
-                        <span className='w-5 h-5 px-4 py-2 bg-[#4b4d55] rounded-[50%]' ></span>
-                        <span className='w-5 h-5 px-4 py-2 bg-[#b39fa3] rounded-[50%]' ></span>
-                        <span className='w-5 h-5 px-4 py-2 bg-[#b39fa3] rounded-[50%]' ></span>
+                        <span className='w-5 h-5 px-4 py-2 bg-[#4b5552] rounded-[50%] cursor-pointer hover:shadow-xl active:outline active:outline-white' ></span>
+                        <span className='w-5 h-5 px-4 py-2 bg-[#4b4d55] rounded-[50%] cursor-pointer hover:shadow-xl active:outline active:outline-white' ></span>
+                        <span className='w-5 h-5 px-4 py-2 bg-[#b39fa3] rounded-[50%] cursor-pointer hover:shadow-xl active:outline active:outline-white' ></span>
+                        <span className='w-5 h-5 px-4 py-2 bg-[#b39fa3] rounded-[50%] cursor-pointer hover:shadow-xl active:outline active:outline-white' ></span>
                     </div>
                 </div>
             </div>

@@ -22,10 +22,10 @@ const DesignSection = () => {
                     manufacturing process. Design considerations can include using recycled materials in the manufacturing process and using products that can be disassembled and recycled after their useful life.
                 </p>
                 <div className='space-x-5'>
-                    <button className='text-lg px-6 py-3 bg-[#dbdad8] text-[#4c5653] font-semibold'>
+                    <button className='text-lg px-6 py-3 bg-[#dbdad8] text-[#4c5653] font-semibold duration-100 hover:bg-[#4c5653] hover:text-[#dbdad8] hover:outline'>
                         GET YOURS NOW
                     </button>
-                    <button className='text-lg px-6 py-3 border-2 border-[#dbdad8] text-[#dbdad8] font-semibold'>
+                    <button className='text-lg px-6 py-3 border-2 border-[#dbdad8] text-[#dbdad8] font-semibold  duration-100 hover:bg-[#dbdad8] hover:text-[#4c5653]'>
                         DISCOVER MORE
                     </button>
                 </div>
