@@ -4,6 +4,7 @@ import FarnitureSection from './FarnitureSection/FarnitureSection';
 import CollectionSection from './CollectionSection/CollectionSection';
 import ConceptSection from './ConceptSection/ConceptSection';
 import ProductSection from './ProductSection/ProductSection';
+import DesignSection from './DesignSection/DesignSection';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <CollectionSection/>
             <ConceptSection/>
             <ProductSection/>
+            <DesignSection/>
         </div>
     );
 };
