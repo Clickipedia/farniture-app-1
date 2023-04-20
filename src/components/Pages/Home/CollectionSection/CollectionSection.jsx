@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import image1 from '../../../../assets/all-images/collection-image1.png'
 import image2 from '../../../../assets/all-images/collection-image2.png'
 
@@ -8,11 +8,20 @@ import miniImage3 from '../../../../assets/all-images/collection-mini-image3.png
 
 
 
+
 const CollectionSection = () => {
+
+    const image3 = 'https://5.imimg.com/data5/SELLER/Default/2021/10/FC/WR/KH/127126251/designer-u-shape-fabric-luxury-furniture-sofa-set-1000x1000.jpg'
+    const image4 = 'https://cdn.home-designing.com/wp-content/uploads/2022/06/modern-swivel-chair-low-profile-living-room-furniture-for-sale-online-designer-seating-ideas-white-boucle-fabric-upholstery-trend-bedroom-library-reading-nook-lounge.jpg';
+
+
+    const [image, setImage] = useState(image1);
+
+
     return (
         <div className='grid md:grid-cols-2 grid-cols-1 bg-[#dbdad8]'>
             <div>
-                <img className='w-full' src={image1} alt="" />
+                <img className='w-full h-[45rem] object-cover' src={image} alt="" />
             </div>
             <div className='flex items-center justify-between 2xl:px-[76px] px-[40px] 2xl:py-[120px] py-[50px] 2xl:gap-[65px]'>
                 <div className='2xl:space-y-[34px] space-y-[20px]'>
@@ -27,9 +36,9 @@ const CollectionSection = () => {
                     </button>
                 </div>
                 <div className='space-y-5'>
-                    <img className='bg-[#c0bfbe] 2xl:rounded-xl md:rounded-md rounded-sm 2xl:h-32 h-16 md:w-20 w-28 2xl:w-32 object-contain 2xl:p-3 p-2' src={miniImage1} alt="" />
-                    <img className='bg-[#c0bfbe] 2xl:rounded-xl md:rounded-md rounded-sm 2xl:h-32 h-16 md:w-20 w-28 2xl:w-32 object-contain 2xl:p-3 p-2' src={miniImage2} alt="" />
-                    <img className='bg-[#c0bfbe] 2xl:rounded-xl md:rounded-md rounded-sm 2xl:h-32 h-16 md:w-20 w-28 2xl:w-32 object-contain 2xl:p-3 p-2' src={miniImage3} alt="" />
+                    <img onClick={()=>setImage(image1)} className='bg-[#c0bfbe] 2xl:rounded-xl cursor-pointer hover:opacity-75 duration-200 md:rounded-md rounded-sm 2xl:h-32 h-16 md:w-20 w-28 2xl:w-32 object-contain 2xl:p-3 p-2' src={miniImage1} alt="" />
+                    <img onClick={()=>setImage(image3)} className='bg-[#c0bfbe] 2xl:rounded-xl cursor-pointer hover:opacity-75 duration-200 md:rounded-md rounded-sm 2xl:h-32 h-16 md:w-20 w-28 2xl:w-32 object-contain 2xl:p-3 p-2' src={miniImage2} alt="" />
+                    <img onClick={()=>setImage(image4)} className='bg-[#c0bfbe] 2xl:rounded-xl cursor-pointer hover:opacity-75 duration-200 md:rounded-md rounded-sm 2xl:h-32 h-16 md:w-20 w-28 2xl:w-32 object-contain 2xl:p-3 p-2' src={miniImage3} alt="" />
                 </div>
 
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerImage from '../../../../assets/all-images/banner image.png'
+import { Fade } from 'react-awesome-reveal';
 
 const BannerCarousel = () => {
     return (
@@ -8,6 +9,7 @@ const BannerCarousel = () => {
             backgroundImage:`url('${bannerImage}')`,
             backgroundPositionY:'-160px'
         }} >
+            <Fade>
             <div className='2xl:w-[50%] md:w-[45%] w-full 2xl:p-[136px] p-8 text-[#9e9d9b] 2xl:space-y-[40px] space-y-4'>
                 <h3 className='text-2xl'>OUR WOODEN CONCEPTS:</h3>
                 <h1 className='2xl:text-8xl md:text-5xl text-4xl font-bold text-[#4c5653]'>
@@ -22,6 +24,7 @@ const BannerCarousel = () => {
                     Discover More
                 </button>
             </div>
+            </Fade>
         </div>
     );
 };

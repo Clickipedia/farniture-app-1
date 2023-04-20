@@ -119,8 +119,8 @@ const ReviewCard = ({ person }) => {
         <div>
             <Slide direction='up'>
 
-                <div className='relative mx-auto bg-slate-50 space-y-3 rounded-xl text-lg text-center shadow-xl w-[25rem] h-[20rem]'>
-                    <div className='bg-[#4b5552] py-4 px-5 gap-5 flex justify-between items-center rounded-t-xl'>
+                <div className='relative mx-auto bg-slate-50 space-y-3 rounded-md text-lg text-center shadow-lg w-[25rem] h-[20rem]'>
+                    <div className='bg-[#4b5552] py-4 px-5 gap-5 flex justify-between items-center rounded-t-md'>
                         <img className='md:w-20 w-12 md:h-20 h-12 border-4 object-top border-white bg-white object-cover shadow-xl rounded-[50%]' src={person.image} alt="" />
                         <div className='w-full grid grid-cols-2 items-center justify-between gap-2 text-lg'>
                             <h1 className='font-semibold text-white text-left'>{person.name}</h1>

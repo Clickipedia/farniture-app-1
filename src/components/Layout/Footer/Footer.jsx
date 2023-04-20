@@ -52,7 +52,7 @@ const Footer = () => {
                     <div className='space-y-5'>
                     <p className='' >Join our newsletter for updates.</p>
                     <input className='border-2 px-4 w-full py-2 outline-none bg-[#4c5653] text-sm text-white' type="text" placeholder='youremail@mail.com' />
-                    <button className='duration-150 px-4 py-2 text-[#4c5653] bg-[#dbdad8] hover:bg-[#bebebc] 2xl:text-lg text-sm font-semibold'>
+                    <button className='duration-150 px-4 py-2 text-[#4c5653] bg-[#dbdad8] hover:bg-[#bebebc] text-sm font-semibold'>
                     SUBSCRIBE NOW
                     </button>
                     </div>
