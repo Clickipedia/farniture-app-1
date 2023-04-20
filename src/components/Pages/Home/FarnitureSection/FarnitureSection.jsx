@@ -65,14 +65,14 @@ const FarnitureSection = () => {
     };
 
     return (
-        <div className='bg-[#4b5552] py-[85px]'>
+        <div className='bg-[#4b5552] 2xl:py-[85px] py-[50px]'>
 
             <div className='text-center'>
-                <h1 className='text-6xl text-[#dbdad8] font-semibold' >Made for you, Made by you.</h1>
-                <p className='text-[#9e9d9b] mt-5 w-[40%] mx-auto' >Sustainable furniture design strives to create a closed-loop cycle in which materials and products are perpetually recycled and designed.</p>
+                <h1 className='2xl:text-6xl md:text-4xl text-2xl text-[#dbdad8] font-semibold' >Made for you, Made by you.</h1>
+                <p className='text-[#9e9d9b] mt-5 md:w-[40%] w-[95%] mx-auto' >Sustainable furniture design strives to create a closed-loop cycle in which materials and products are perpetually recycled and designed.</p>
             </div>
 
-            <div className='mt-[70px] w-3/4 h-auto mx-auto'>
+            <div className='md:mt-[70px] mt-[35px] 2xl:w-3/4 h-auto mx-auto'>
                 <Carousel
                     responsive={responsive}
                     arrows={false}
@@ -80,7 +80,7 @@ const FarnitureSection = () => {
                     customDot={<CustomDot/>}
                     // renderDotsOutside
                     dotListClass=''
-                    containerClass='pb-32'
+                    containerClass='2xl:pb-32 pb-20'
                 >
                         {
                             data.map((item, i)=><FarnitureCard key={i} item={item} />)

@@ -30,7 +30,7 @@ const BannerSection = () => {
 
 
     return (
-        <div>
+        <div className=''>
            <Carousel
            responsive={responsive}
            showDots
@@ -41,7 +41,8 @@ const BannerSection = () => {
            rewind
            rewindWithAnimation
            infinite={true}
-           containerClass='flex justify-start'
+           containerClass=''
+
            >
                 <BannerCarousel/>
                 <BannerCarousel/>
@@ -57,7 +58,7 @@ const CustomDot = ({ onMove, index, onClick, active }) => {
     // active is provided by this lib for checking if the item is active or not.
     return (
       <li
-        className={`ms-2 mb-8 p-2 rounded-[50%] cursor-pointer border-2 ${active ? "active bg-[#9e9d9b] " : "inactive bg-[#e3e2e1] "}`}
+        className={`ms-2 2xl:mb-8 md:mb-4 mb-2 md:p-2 p-1 rounded-[50%] cursor-pointer border-2 ${active ? "active bg-[#9e9d9b] " : "inactive bg-[#e3e2e1] "}`}
         onClick={() => onClick()}
       >
         

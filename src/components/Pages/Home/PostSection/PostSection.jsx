@@ -39,14 +39,14 @@ const PostSection = () => {
 
 
     return (
-        <div className='w-full py-[78px] bg-[#dbdad8]'>
+        <div className='w-full md:py-[78px] py-[30px] px-5 bg-[#dbdad8]'>
 
-            <div className='w-[650px] mx-auto text-center mb-[75px]'>
-                <h1 className='text-6xl font-bold text-[#4b5552] mb-[30px]' >Recent Posts</h1>
-                <p className='text-[#a1a09e] text-xl' >Sustainable furniture design strives to create a closed-loop cycle in which materials and products are perpetually recycled and designed.</p>
+            <div className='md:w-[650px] px-2 w-full mx-auto text-center mb-[75px]'>
+                <h1 className='md:text-6xl text-3xl font-bold text-[#4b5552] mb-[30px]' >Recent Posts</h1>
+                <p className='text-[#a1a09e] md:text-xl' >Sustainable furniture design strives to create a closed-loop cycle in which materials and products are perpetually recycled and designed.</p>
             </div>
 
-            <div className='grid grid-cols-2 gap-[66px] w-[1178px] mx-auto'>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-[66px] md:w-[1178px] mx-auto'>
                 {
 
                     data.map(post=><PostCard key={post.id} post={post} />)

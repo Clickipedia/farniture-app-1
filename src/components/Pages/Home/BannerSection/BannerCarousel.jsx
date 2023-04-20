@@ -3,15 +3,15 @@ import bannerImage from '../../../../assets/all-images/banner image.png'
 
 const BannerCarousel = () => {
     return (
-        <div className=' bg-no-repeat bg-cover w-full h-[90vh] flex items-center'
+        <div className=' bg-no-repeat -bg-right-[50px] bg-cover bg-[#dbdad8] w-full 2xl:h-[88vh] h-[80vh] flex md:items-center'
         style={{
             backgroundImage:`url('${bannerImage}')`,
-            backgroundPositionY:'-140px'
+            backgroundPositionY:'-160px'
         }} >
-            <div className='w-[50%] p-[136px] text-[#9e9d9b] space-y-[40px]'>
+            <div className='2xl:w-[50%] md:w-[45%] w-full 2xl:p-[136px] p-8 text-[#9e9d9b] 2xl:space-y-[40px] space-y-4'>
                 <h3 className='text-2xl'>OUR WOODEN CONCEPTS:</h3>
-                <h1 className='text-8xl font-bold text-[#4c5653]'>
-                    Designer’s <br />
+                <h1 className='2xl:text-8xl md:text-5xl text-4xl font-bold text-[#4c5653]'>
+                    Designer’s <br/>
                     Collection
                 </h1>
                 <p className='text-lg'>
