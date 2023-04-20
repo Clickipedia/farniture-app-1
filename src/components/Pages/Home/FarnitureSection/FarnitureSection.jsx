@@ -83,7 +83,7 @@ const FarnitureSection = () => {
                     containerClass='pb-32'
                 >
                         {
-                            data.map(item=><FarnitureCard item={item} />)
+                            data.map((item, i)=><FarnitureCard key={i} item={item} />)
                         }
                 </Carousel>
             </div>

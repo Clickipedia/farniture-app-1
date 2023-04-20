@@ -5,6 +5,7 @@ import CollectionSection from './CollectionSection/CollectionSection';
 import ConceptSection from './ConceptSection/ConceptSection';
 import ProductSection from './ProductSection/ProductSection';
 import DesignSection from './DesignSection/DesignSection';
+import PostSection from './PostSection/PostSection';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <ConceptSection/>
             <ProductSection/>
             <DesignSection/>
+            <PostSection/>
         </div>
     );
 };
