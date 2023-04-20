@@ -5,7 +5,7 @@ import bgImage from '../../../../assets/all-images/design-bg-image.png';
 import img1 from '../../../../assets/all-images/design-image1.png';
 import img2 from '../../../../assets/all-images/design-image2.png';
 import img3 from '../../../../assets/all-images/design-image3.png';
-import { Fade } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 
 
 const DesignSection = () => {
@@ -39,10 +39,17 @@ const DesignSection = () => {
                 </div>
             </Fade>
             <div className='absolute z-10 2xl:top-[130px] top-[100px] right-0 '>
-                <img className='2xl:w-full md:block hidden w-[35rem]' src={bgImage} alt="" />
+                <Fade>
+                    <img className='2xl:w-full md:block hidden w-[35rem]' src={bgImage} alt="" />
+                </Fade>
             </div>
             <div className='absolute 2xl:top-[50px] top-[20px] 2xl:right-[420px] right-[340px]'>
-                <p className='2xl:text-[18rem] md:block hidden text-[15rem] font-bold text-[#6c7471]' >01</p>
+                <Slide direction='right' duration={1500}>
+                    <Fade>
+
+                        <p className='2xl:text-[18rem] md:block hidden text-[15rem] font-bold text-[#6c7471]' >01</p>
+                    </Fade>
+                </Slide>
             </div>
         </div>
     );

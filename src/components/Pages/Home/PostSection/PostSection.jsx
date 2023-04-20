@@ -4,6 +4,7 @@ import image1 from '../../../../assets/all-images/post-image1.png';
 import image2 from '../../../../assets/all-images/post-image2.png';
 import image3 from '../../../../assets/all-images/post-image3.png';
 import image4 from '../../../../assets/all-images/post-image4.png';
+import { Fade } from 'react-awesome-reveal';
 
 
 
@@ -49,7 +50,7 @@ const PostSection = () => {
             <div className='grid md:grid-cols-2 grid-cols-1 gap-[66px] md:w-[1178px] mx-auto'>
                 {
 
-                    data.map(post=><PostCard key={post.id} post={post} />)
+                    data.map(post => <PostCard key={post.id} post={post} />)
                 }
             </div>
 
@@ -58,16 +59,18 @@ const PostSection = () => {
 };
 
 
-const PostCard = ({post})=>{
+const PostCard = ({ post }) => {
 
-    return(
-        <div className='mx-auto'>
-            <img className='h-[260px] object-cover' src={post.img} alt="" />
-            <div className='bg-[#e3e2e1] p-5'>
-                <h1 className='text-2xl font-semibold text-[#4b5552]'>{post.title}</h1>
-                <p className='text-[#a1a09e] text-lg' >{post.desc}</p>
+    return (
+        <Fade duration={1500} >
+            <div className='mx-auto'>
+                <img className='h-[260px] object-cover' src={post.img} alt="" />
+                <div className='bg-[#e3e2e1] p-5'>
+                    <h1 className='text-2xl font-semibold text-[#4b5552]'>{post.title}</h1>
+                    <p className='text-[#a1a09e] text-lg' >{post.desc}</p>
+                </div>
             </div>
-        </div>
+        </Fade>
     )
 }
 
