@@ -9,6 +9,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import { BsFillCartCheckFill } from 'react-icons/bs'
+import { Slide } from 'react-awesome-reveal';
 
 const ProductSection = () => {
 
@@ -68,17 +69,21 @@ const ProductSection = () => {
 
             <div className='md:w-[80%] w-full mx-auto'>
 
-                <Carousel
-                    responsive={responsive}
-                    containerClass='py-20 px-5'
-                    arrows={false}
-                    showDots
-                    customDot={<CustomDot />}
-                >
-                    {
-                        data.map((item, i) => <ProductCard key={item.id} item={item} i={i} />)
-                    }
-                </Carousel>
+                <Slide>
+
+                    <Carousel
+                        responsive={responsive}
+                        containerClass='py-20 px-5'
+                        arrows={false}
+                        showDots
+                        customDot={<CustomDot />}
+                    >
+                        {
+                            data.map((item, i) => <ProductCard key={item.id} item={item} i={i} />)
+                        }
+                    </Carousel>
+
+                </Slide>
 
 
             </div>

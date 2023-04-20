@@ -6,7 +6,7 @@ import Header2 from '../Header/Header2';
 
 const Main = () => {
     return (
-        <div>
+        <div className='overflow-hidden' >
             <div className='sticky z-50 top-0'>
                 <Header />
             </div>

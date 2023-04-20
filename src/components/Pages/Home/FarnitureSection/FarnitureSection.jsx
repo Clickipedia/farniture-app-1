@@ -7,39 +7,40 @@ import 'react-multi-carousel/lib/styles.css';
 import img1 from '../../../../assets/all-images/lamp-image.png';
 import img2 from '../../../../assets/all-images/desk-image.png';
 import img3 from '../../../../assets/all-images/mini-table-image.png';
+import { Zoom } from 'react-awesome-reveal';
 
 
 const FarnitureSection = () => {
 
-    const data= [
+    const data = [
         {
-            id:1,
-            name:'Our Lamp Collection',
+            id: 1,
+            name: 'Our Lamp Collection',
             image: img1
         },
         {
-            id:2,
-            name:'Designer’s Desks',
+            id: 2,
+            name: 'Designer’s Desks',
             image: img2
         },
         {
-            id:3,
-            name:'Mini Tables',
+            id: 3,
+            name: 'Mini Tables',
             image: img3
         },
         {
-            id:1,
-            name:'Our Lamp Collection',
+            id: 1,
+            name: 'Our Lamp Collection',
             image: img1
         },
         {
-            id:2,
-            name:'Designer’s Desks',
+            id: 2,
+            name: 'Designer’s Desks',
             image: img2
         },
         {
-            id:3,
-            name:'Mini Tables',
+            id: 3,
+            name: 'Mini Tables',
             image: img3
         },
     ]
@@ -67,24 +68,26 @@ const FarnitureSection = () => {
     return (
         <div className='bg-[#4b5552] 2xl:py-[85px] py-[50px]'>
 
-            <div className='text-center'>
-                <h1 className='2xl:text-6xl md:text-4xl text-2xl text-[#dbdad8] font-semibold' >Made for you, Made by you.</h1>
-                <p className='text-[#9e9d9b] mt-5 md:w-[40%] w-[95%] mx-auto' >Sustainable furniture design strives to create a closed-loop cycle in which materials and products are perpetually recycled and designed.</p>
-            </div>
+            <Zoom>
+                <div className='text-center'>
+                    <h1 className='2xl:text-6xl md:text-4xl text-2xl text-[#dbdad8] font-semibold' >Made for you, Made by you.</h1>
+                    <p className='text-[#9e9d9b] mt-5 md:w-[40%] w-[95%] mx-auto' >Sustainable furniture design strives to create a closed-loop cycle in which materials and products are perpetually recycled and designed.</p>
+                </div>
+            </Zoom>
 
             <div className='md:mt-[70px] mt-[35px] 2xl:w-3/4 h-auto mx-auto'>
                 <Carousel
                     responsive={responsive}
                     arrows={false}
                     showDots
-                    customDot={<CustomDot/>}
+                    customDot={<CustomDot />}
                     // renderDotsOutside
                     dotListClass=''
                     containerClass='2xl:pb-32 pb-20'
                 >
-                        {
-                            data.map((item, i)=><FarnitureCard key={i} item={item} />)
-                        }
+                    {
+                        data.map((item, i) => <FarnitureCard key={i} item={item} />)
+                    }
                 </Carousel>
             </div>
 
@@ -94,7 +97,7 @@ const FarnitureSection = () => {
 };
 
 
-const FarnitureCard = ({item}) => {
+const FarnitureCard = ({ item }) => {
     return (
         <div className='bg-[#dbdad8] w-[335px] mx-auto space-y-1'>
             <img className='w-full object-contain h-[360px] p-10' src={item.image} alt="" />
@@ -108,14 +111,14 @@ const CustomDot = ({ onMove, index, onClick, active }) => {
     // onMove means if dragging or swiping in progress.
     // active is provided by this lib for checking if the item is active or not.
     return (
-      <li
-        className={`ms-2 cursor-pointer text-xl font-semibold ${active ? "active text-[#e3e2e1] " : "inactive text-[#9e9d9b]"}`}
-        onClick={() => onClick()}
-      >
-        {index + 1}
-      </li>
+        <li
+            className={`ms-2 cursor-pointer text-xl font-semibold ${active ? "active text-[#e3e2e1] " : "inactive text-[#9e9d9b]"}`}
+            onClick={() => onClick()}
+        >
+            {index + 1}
+        </li>
     );
-  };
+};
 
 
 
